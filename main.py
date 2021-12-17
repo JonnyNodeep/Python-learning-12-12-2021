@@ -55,51 +55,89 @@ for i in range(1, 11):
 Вывести цифры числа на каждой строчке.
 '''
 
-number = input('Введите число: ')
+'''number = input('Введите число: ')
 list_number = list(number)
 list_number.reverse()
 rev_number = int("".join(list_number))
 
 while rev_number > 0:
     print(rev_number % 10)
-    rev_number //= 10
+    rev_number //= 10'''
 
 '''
 Задача 6
 
 Найти сумму цифр числа.
 '''
-num = int(input('Enter a number: '))
-
+'''num = int(input('Enter a number: '))
+sum = 0
+while num > 0:
+    sum += num % 10
+    num //= 10
+    print(sum)'''
 
 '''
 Задача 7
 
 Найти произведение цифр числа.
 '''
+'''num = int(input('Enter a number: '))
+mult = 1
+while num > 0:
+    mult *= num % 10
+    num //= 10
+    print(mult)'''
 
 '''
 Задача 8
 
 Дать ответ на вопрос: есть ли среди цифр числа 5?
 '''
-integer_number = 213413
-while integer_number > 0:
-    if integer_number % 10 == 5:
-        print('Yes')
+'''int_num = int(input('Enter a number: '))
+while int_num > 0:
+    if int_num % 10 == 5:
+        print('5 is hear')
         break
-    integer_number = integer_number // 10
+    int_num //= 10
 else:
-    print('No')
+    print('5 is absent')'''
 
 '''
 Задача 9
 
 Найти максимальную цифру в числе
 '''
+# first variant
+
+# int_num = list(input('Enter a number:'))
+# max_numb = max(int_num)
+# print(max_numb)
+
+# second variant
+
+int_num = 23456
+max_num = int_num % 10
+int_num = int_num // 10
+
+while int_num > 0:
+    if int_num % 10 > max_num:
+        max_num = int_num % 10
+    int_num = int_num // 10
+print(max_num)
+
+
 
 '''
 Задача 10
 
 Найти количество цифр 5 в числе
 '''
+'''int_number = 21555555413
+count = 0
+while int_number > 0:
+    if int_number % 10 == 5:
+        count += 1
+    int_number = int_number // 10
+
+    print(count)'''
+
